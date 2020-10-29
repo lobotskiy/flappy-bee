@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bee</title>
+</head>
+<style>
+    body {
+        background: url(img/game-bg.png)no-repeat center center fixed;
+        background-size: cover;
+        font-family: FreeMono, monospace;
+    }
+
+    p {
+        text-align: justify;
+    }
+    
+    .menu {
+        padding: 5px;
+        width: 700px;
+        height: 350px;
+        position: relative;
+        margin: auto;
+        text-align: center;
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 10px black;
+
+    }
+
+    .text {
+        padding: 5px;
+        border: black solid 1px;
+        border-radius: 20px;
+        background-color: rgba(232, 205, 255, 0.904);
+    }
+
+
+    .back {
+        width: 300px;
+        padding: 2px;
+        margin: auto;
+        margin-top: 15px;
+        background-color: rgba(199, 144, 250, 0.904);
+        border-radius: 20px;
+        box-shadow: 0 0 10px black;
+        border: 1px solid rgba(199, 144, 250, 0.904)
+    }
+
+    .back:hover {
+        border: black solid 1px;
+        background-color: rgba(213, 182, 241, 0.904);
+    }
+    
+    h1{
+        text-shadow: rgba(156, 83, 224, 0.904) 0 0 10px;
+    }
+
+</style>
+
+<body>
+    <div class="menu" id="menu">
+        <div class="caption">
+            <h1>About the game</h1>
+        </div>
+        <div class="text">
+            <p>The object of the game is to control the flight of a bee that is constantly moving
+                between rows of green pipes.
+                When they encounter them, the game ends. The control is carried out by pressing buttons, in which the
+                bee makes a small jerk up.
+                In the absence of jerks, the bee falls due to gravity, and the game will also be completed.
+                Points are earned for each successful flight between two tubes. The gameplay does not change during the
+                game.
+            </p>
+        </div>
+        <div class="back" onclick="document.location='menu-game.html'">
+            <h2>Back</h2>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+
+</html>

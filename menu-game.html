@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bee</title>
+</head>
+<style>
+    body {
+        background: url(img/bee-bg.png)no-repeat center center fixed;
+        background-size: cover;
+        font-family: FreeMono, monospace;
+    }
+
+    .menu {
+        padding: 5px;
+        width: 300px;
+        height: 310px;
+        position: relative;
+        margin: auto;
+        text-align: center;
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 10px black;
+
+    }
+
+    .play {
+        padding: 5px;
+        margin: 20px;
+        margin-top: 40px;
+        background-color: rgba(199, 144, 250, 0.904);
+        border-radius: 20px;
+        box-shadow: 0 0 10px black;
+        border: 1px solid rgba(199, 144, 250, 0.904);
+    }
+
+    .play:hover {
+        border: black solid 1px;
+        background-color: rgba(213, 182, 241, 0.904);
+    }
+
+    .about {
+        padding: 5px;
+        margin: 20px;
+        margin-top: 30px;
+        background-color: rgba(199, 144, 250, 0.904);
+        border-radius: 20px;
+        box-shadow: 0 0 10px black;
+        border: 1px solid rgba(199, 144, 250, 0.904)
+    }
+
+    .about:hover {
+        border: black solid 1px;
+        background-color: rgba(213, 182, 241, 0.904);
+    }
+    
+    h1{
+        text-shadow: rgba(156, 83, 224, 0.904) 0 0 10px;
+    }
+
+</style>
+
+<body>
+    <div class="menu" id="menu">
+        <div class="caption">
+            <h1>Flappy bee</h1>
+        </div>
+        <div class="play" onclick="document.location='game.html'">
+            <h2>Play</h2>
+        </div>
+        <div class="about" onclick="document.location='about-game.html'">
+            <h2>About</h2>
+        </div>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+
+</html>

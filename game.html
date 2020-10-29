@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy bee</title>
+</head>
+<style>
+    body {
+        background: url(img/game-bg.png)no-repeat center center fixed;
+        background-size: cover;
+        font-family: FreeMono, monospace;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .modal {
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 10px black;
+        height: 360px;
+        width: 300px;
+        text-align: center;
+        padding: 5px;
+        position: absolute;
+        top: 18%;
+        left: 39%;
+    }
+
+    .restart {
+        padding: 5px;
+        margin: 20px;
+        margin-top: 40px;
+        background-color: rgba(199, 144, 250, 0.904);
+        border-radius: 20px;
+        box-shadow: 0 0 10px black;
+        border: 1px solid rgba(199, 144, 250, 0.904);
+    }
+
+    .restart:hover {
+        border: black solid 1px;
+        background-color: rgba(213, 182, 241, 0.904);
+    }
+
+    .exit {
+        padding: 5px;
+        margin: 20px;
+        margin-top: 30px;
+        background-color: rgba(199, 144, 250, 0.904);
+        border-radius: 20px;
+        box-shadow: 0 0 10px black;
+        border: 1px solid rgba(199, 144, 250, 0.904);
+    }
+
+    .exit:hover {
+        border: black solid 1px;
+        background-color: rgba(213, 182, 241, 0.904);
+    }
+
+    #canvas {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 90px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px black;
+    }
+
+    h1, h2{
+        text-shadow: rgba(156, 83, 224, 0.904) 0 0 10px;
+    }
+</style>
+
+<body>
+    
+    <div class="modal hidden">
+        <div class="score">
+            <h1 class="score-header1"></h1>
+            <h2 class="score-header2"></h2>
+        </div>
+        <div class="restart" onclick="document.location='game.html'">
+            <h2>Restart</h2>
+        </div>
+        <div class="exit" onclick="document.location='menu-game.html'">
+            <h2>Exit</h2>
+        </div>
+    </div>
+
+    <canvas id="canvas" width="550" height="512"></canvas>
+
+    <script src="js/game.js"></script>
+</body>
+
+</html>
